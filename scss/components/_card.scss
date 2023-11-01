@@ -1,0 +1,46 @@
+@use "../base" as *;
+@use "sass:map";
+/*--START CARD--------------------*/
+.card {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  @include themeColor(background-color,"theme-bg");
+  border-radius: 1rem;
+  box-shadow: map-get($shadows , "shadow-sharp" );
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: map-get($map: $shadows, $key: shadow-diffuse);
+    transition: all 0.3s ease-in-out;
+  }
+ 
+  &__title {
+    padding: 0 1rem;
+  }
+  &__description {
+    padding: 0 1rem 2rem;
+  }
+  &__image {
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  &--small {
+    max-width: 21rem;
+    padding: 1rem;
+
+  }
+
+  @include mq(mobile){
+    &__title{
+      padding: 0;
+    }
+    &__description{
+      padding: 0 0 1rem;
+    }
+    &--small{
+      max-width: 18rem;
+    }
+  }
+}
+/*--END CARD--------------------*/

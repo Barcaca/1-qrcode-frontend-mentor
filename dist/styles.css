@@ -1,0 +1,146 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+/*--START VARIABLE--------------------*/
+:root {
+  /*--COLOR--------------------*/
+  --lb-clr-theme-primary: hsl(218, 44%, 22%);
+  --lb-clr-theme-secondary: hsl(220, 15%, 55%);
+  --lb-clr-theme-bg: hsl(0, 0%, 100%);
+  --lb-clr-theme-bg-alt: hsl(212, 45%, 89%);
+  /*--FONT FAMILY--------------------*/
+  --lb-font-base: Outfit, sans-serif;
+  --lb-font-code: Courier Prime, monospace;
+  /*--FONT SIZE--------------------*/
+  --lb-font-base: 1rem;
+  --lb-font-small: 0.9375rem;
+  --lb-font-large: 1.4rem;
+  /*--FONT WEIGHT--------------------*/
+  --lb-font-regular: 400;
+  --lb-font-medium: 500;
+  --lb-font-bold: 700;
+  /*--LINE HEIGHT--------------------*/
+  --lb-line-lh-base: 1.4;
+  --lb-line-lh-sm: 1.3;
+  --lb-line-lh-lg: 1.6;
+  /*--BOX SHADOW-------------------*/
+  --lb-box-shadow-sharp: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+  --lb-box-shadow-diffuse: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+/*--END VARIABLE--------------------*/
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  background: hsl(212, 45%, 89%);
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
+/*--START TYPOGRAPHY--------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.6;
+  color: hsl(218, 44%, 22%);
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+@media (max-width: 25em) {
+  h3 {
+    line-height: 1.4;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: hsl(220, 15%, 55%);
+}
+@media (max-width: 25em) {
+  p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
+
+/*--END TYPOGRAPHY--------------------*/
+/*--START CARD--------------------*/
+.card {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+.card__title {
+  padding: 0 1rem;
+}
+.card__description {
+  padding: 0 1rem 2rem;
+}
+.card__image {
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+.card--small {
+  max-width: 21rem;
+  padding: 1rem;
+}
+@media (max-width: 25em) {
+  .card__title {
+    padding: 0;
+  }
+  .card__description {
+    padding: 0 0 1rem;
+  }
+  .card--small {
+    max-width: 18rem;
+  }
+}
+
+/*--END CARD--------------------*/
+/*--START MAIN--------------------*/
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*--END MAIN--------------------*//*# sourceMappingURL=styles.css.map */
