@@ -70,11 +70,11 @@ h6 {
   color: hsl(218, 44%, 22%);
 }
 
-h3 {
+h2 {
   font-size: 1.4rem;
 }
 @media (max-width: 25em) {
-  h3 {
+  h2 {
     line-height: 1.4;
   }
 }
