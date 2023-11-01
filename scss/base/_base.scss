@@ -40,7 +40,7 @@ h6 {
   @include font-style(null, $fw-700, $line-h-lg);
   @include themeColor(color,"theme-primary");
 }
-h3{
+h2{
   @include font-style($fsize-lg);
   @include mq(mobile){
     @include font-style(null, null, $line-h-base);
