@@ -20,9 +20,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ![](images/screenshot.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:  [QR Code Component | Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-frontend-mentor-BFPFQDRrQb)
+- Live Site URL: [https://1-qrcode-frontend-mentor.vercel.app](https://1-qrcode-frontend-mentor.vercel.app)
 
 ## My process
 
