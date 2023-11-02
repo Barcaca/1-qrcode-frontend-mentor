@@ -142,5 +142,8 @@ p {
   justify-content: center;
   min-height: 100vh;
 }
+#main .main__title {
+  margin-bottom: 1rem;
+}
 
 /*--END MAIN--------------------*//*# sourceMappingURL=styles.css.map */
